@@ -1,0 +1,24 @@
+/* Дизайн-токены. Финальная палитра и шрифты будут уточнены по референсу. */
+:root {
+  --bg: #fbf6f4;
+  --surface: #fffaf8;
+  --ink: #2b1d21;
+  --ink-soft: #7a6267;
+  --accent: #c2405a;
+  --accent-soft: #f3d5da;
+  --line: #ead9d8;
+
+  --intro-bg: #140d10;
+  --intro-ink: #f5e9eb;
+
+  --paper: #fffdf9;
+  --endpaper: #f2dfe0;
+  --cover-bg: linear-gradient(145deg, #8e2236, #5e1424);
+  --cover-ink: #fbeef0;
+  --book-board: #4f1220;
+
+  --shadow-book: 0 30px 60px -20px rgba(70, 20, 35, 0.45), 0 10px 20px -10px rgba(70, 20, 35, 0.3);
+
+  --font-serif: 'Cormorant Garamond', 'Playfair Display', Georgia, 'Times New Roman', serif;
+  --font-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}

@@ -1,0 +1,79 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  /* Полоса прокрутки скрыта визуально, прокрутка работает */
+  scrollbar-width: none;
+}
+html::-webkit-scrollbar,
+body::-webkit-scrollbar,
+*::-webkit-scrollbar {
+  display: none;
+}
+* {
+  scrollbar-width: none;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+body.is-locked {
+  overflow: hidden;
+}
+
+button {
+  font: inherit;
+}
+
+.section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 16px;
+  text-align: center;
+}
+
+/* ── Общая атмосфера за секциями Hero / книга / финал ── */
+.site-ambient {
+  position: fixed;
+  z-index: 0;
+}
+main {
+  position: relative;
+  z-index: 1;
+}
+
+/* ── Финальная сцена: начинается вместе с растворением книги (за экран до конца
+   её закреплённой части), содержимое закреплено — книга и финал сменяются на одном месте ── */
+.final-scene {
+  position: relative;
+  z-index: 2;
+  height: 300svh;
+  margin-top: -200svh;
+}
+.final-scene__stage {
+  position: sticky;
+  top: 0;
+  height: 100svh;
+  overflow: hidden;
+}
+.final-scene__content {
+  height: 100%;
+}
+.final-scene__content > .section {
+  min-height: 100%;
+  height: 100%;
+}
